@@ -1,5 +1,11 @@
----
-// No JavaScript is needed unless you want interactivity
----
+<script>
+    import browser from "webextension-polyfill";
+
+    const button = document.getElementById("newtab");
+    button?.addEventListener("click", () => {
+        browser.tabs.create({ url: "about:blank" });
+    });
+</script>
 
 <p>Hello world!</p>
+<button id="newtab">Open New Tab</butto>
