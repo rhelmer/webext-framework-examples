@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Framework Demo Extension",
+    "version": "1.0",
+    "description": "A simple web extension built using popular frameworks.",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}

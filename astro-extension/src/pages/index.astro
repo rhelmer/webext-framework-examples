@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Popup</title>
+		<script type="module">
+			if (typeof browser !== "undefined") {
+				import("webextension-polyfill").then(() => {
+					console.log("webextension-polyfill loaded successfully");
+				});
+			} else {
+				console.error(
+					"This script should only run in a browser extension.",
+				);
+			}
+		</script>
+	</head>
+	<body>
+		<p>Hello world!</p>
+	</body>
+</html>
